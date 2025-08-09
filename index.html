@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lactate Threshold Heart Rate Zones Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lactate Threshold Heart Rate Zones Calculator</h1>
+        <label for="lthr">Enter Your Lactate Threshold Heart Rate (LTHR):</label>
+        <input type="number" id="lthr" placeholder="e.g., 148" />
+        <button onclick="calculateZones()">Calculate HR Zones</button>
+
+        <div id="zones">
+            <h2>Your Heart Rate Zones</h2>
+            <ul>
+                <li>Zone 1 (75-80%): <span id="zone1"></span></li>
+                <li>Zone 2 (81-89%): <span id="zone2"></span></li>
+                <li>Zone 3 (96-100%): <span id="zone3"></span></li>
+                <li>Zone 4 (102-105%): <span id="zone4"></span></li>
+                <li>Zone 5 (106%+): <span id="zone5"></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
